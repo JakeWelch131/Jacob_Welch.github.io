@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jacob Welch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+        <script defer src="C:\Users\Jake\OneDrive\Desktop\Projects\portfolioSite\app.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Tilt+Prism&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="sticky-header">
+            <nav>
+                <a href="index.html" class="main-page-button">Jacob <br> &nbsp;&nbsp;Welch</a>
+                <a href="#" class="menu-icon" onclick="ToggleMenu()">
+                    <div class="menu-bar menu-bar1"></div>
+                    <div class="menu-bar menu-bar2"></div>
+                    <div class="menu-bar menu-bar3"></div>
+                </a>
+                <div class="menu">
+                    <div class="menu-con"><a href="index.html">HOME</a></div>
+                    <div class="menu-con"><a href="projects.html">PROJECTS</a></div>  
+                    <div class="menu-con"><a href="about.html">ABOUT</a></div> 
+                    <div class="menu-con"><a href="contact.html">CONTACT</a></div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="top-left-diagonal-border"></div>
+        <div class="bottom-right-diagonal-border"></div>
+
+        <div class="contact-front-page">
+            <div class="left-connect-text-box-container revealUp">
+                <div class="left-contact-text-box1">
+                    <p>LET'S CHAT</p>
+                </div>
+                <div class="left-contact-text-box2">
+                    <p>I'D LOVE TO CONNECT</p>
+                </div>
+            </div>
+
+            <div class="right-contact-text-box-container">
+                <div class="contact-me-container">
+                    <div class="contact-container hidden">
+                        <div class="contact-title">
+                            <p>SHOOT ME AN EMAIL</p>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:jacobwelch131@gmail.com">jacobwelch131@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-container2">
+                        <div class="contact-title2 hidden">
+                            <p>FOLLOW ME ON SOCIALS</p>
+                        </div>
+                        <div class="socials">
+                            <div class="social-box hidden">
+                                <a href="https://www.linkedin.com/in/jacob-welch131/" target="_blank" class="social-link">
+                                    <img src="C:\Users\Jake\OneDrive\Desktop\Projects\portfolioSite\kisspng-computer-icons-linkedin-5aff0283e54964.1704227815266617639392.png"
+                                    alt="LinkedIn Icon" class="social-image">
+                                </a>
+                            </div>
+                            <div class="social-box hidden">
+                                <a href="https://twitter.com/JakeWelch131" target="_blank" class="social-link">
+                                    <img src="C:\Users\Jake\OneDrive\Desktop\Projects\portfolioSite\twitter-x-seeklogo.com-4.svg"
+                                    alt="Twitter Icon" class="social-image">
+                                </a>
+                            </div>
+                            <div class="social-box hidden">
+                                <a href="https://github.com/JakeWelch131" target="_blank" class="social-link">
+                                    <img src="C:\Users\Jake\OneDrive\Desktop\Projects\portfolioSite\Github_logo_PNG7.png"
+                                    alt="GitHub Icon" class="social-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script defer> 
+            var open = false;
+    
+            function ToggleMenu() {
+                var menuCons = document.querySelectorAll('.menu-con');
+                var menu = document.querySelector('.menu');
+    
+                if (open == false) {
+                    menu.style.display = 'flex';
+                    setTimeout(function () {
+                    menu.style.opacity = 1;
+                    }, 10);
+                    open = true;
+                } else {
+                    menu.style.opacity = 0;
+                    setTimeout(function () {
+                    menu.style.display = 'none';
+                    }, 500);
+                    open = false;
+                }
+    
+                menuCons.forEach(function (menuCon, index) {
+                    var pos = open ? 0 : -1 * window.innerHeight - index * 100;
+                    menuCon.style.top = pos + 'px';
+                });
+    }
+    
+    function Drop() {
+        var menuIcon = document.querySelector('.menu-icon');
+      menuIcon.classList.toggle('hover');
+    
+      if (open == false) {
+        Drp();
+        open = true;
+      } else if (open == true) {
+        Cls();
+        open = false;
+      }
+    }
+    
+    
+    function Drp() {
+        var elements = document.querySelectorAll(".menu-con");
+      elements.forEach(function (elem, index) {
+        var pos = -1 * window.innerHeight - index * 100;
+        var id = setInterval(function () {
+          if (pos >= -10) {
+            clearInterval(id);
+            elem.style.top = 0 + "px";
+          } else {
+            pos += 10;
+            elem.style.top = pos + "px";
+          }
+        }, 5);
+      });
+    }
+    
+    function Cls() {
+        var elements = document.querySelectorAll(".menu-con");
+      elements.forEach(function (elem, index) {
+        var poss = 0;
+        var ids = setInterval(function () {
+          if (poss <= -1 * window.innerHeight) {
+            clearInterval(ids);
+            elem.style.top = -1 * window.innerHeight + "px";
+          } else {
+            poss += -7 - index * 2;
+            elem.style.top = poss + "px";
+          }
+        }, 5);
+      });
+    }
+            </script>
+            <script> 
+                const text = document.querySelector('.rotate-text p');
+                text.innerHTML = text.innerText.split('').map(
+                    (char, i) =>
+                    `<span style= "transform:rotate(${i * 8.3}deg)"> ${char}</span>`
+                ).join('')
+            </script>
+    
+            <script defer>
+                gsap.registerPlugin(ScrollTrigger);
+    // REVEAL //
+                gsap.utils.toArray(".revealUp").forEach(function (elem) {
+                ScrollTrigger.create({
+                    trigger: elem,
+                    start: "top 80%",
+                    end: "bottom 20%",
+                    markers: true,
+                    onEnter: function () {
+                    gsap.fromTo(
+                        elem,
+                        { y: 100, autoAlpha: 0 },
+                        {
+                        duration: 1.25,
+                        y: 0,
+                        autoAlpha: 1,
+                        ease: "back",
+                        overwrite: "auto"
+                        }
+                    );
+                    },
+                    onLeave: function () {
+                    gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+                    },
+                    onEnterBack: function () {
+                    gsap.fromTo(
+                        elem,
+                        { y: -100, autoAlpha: 0 },
+                        {
+                        duration: 1.25,
+                        y: 0,
+                        autoAlpha: 1,
+                        ease: "back",
+                        overwrite: "auto"
+                        }
+                    );
+                    },
+                    onLeaveBack: function () {
+                    gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+                    }
+                });
+                });
+            </script>
+    
+            <script defer>
+                var words = ['LETS CONNECT!'],
+                    part,
+                    i = 0,
+                    offset = 0,
+                    len = words.length,
+                    forwards = true,
+                    skip_count = 0,
+                    skip_delay = 15,
+                    speed = 90;
+                var wordflick = function () {
+                setInterval(function () {
+                    if (forwards) {
+                    if (offset >= words[i].length) {
+                        ++skip_count;
+                        if (skip_count == skip_delay) {
+                        forwards = false;
+                        skip_count = 0;
+                        }
+                    }
+                    }
+                    else {
+                    if (offset == 0) {
+                        forwards = true;
+                        i++;
+                        offset = 0;
+                        if (i >= len) {
+                        i = 0;
+                        }
+                    }
+                    }
+                    part = words[i].substr(0, offset);
+                    if (skip_count == 0) {
+                    if (forwards) {
+                        offset++;
+                    }
+                    else {
+                        offset--;
+                    }
+                    }
+                    $('.text-row').text(part);
+                },speed);
+                };
+    
+                $(document).ready(function () {
+                wordflick();
+                });
+            </script>
+    </body>
+</html>
