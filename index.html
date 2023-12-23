@@ -367,7 +367,7 @@ function Cls() {
 }
         </script>
         <script> 
-            const text = document.querySelector('.rotate-text p');
+            const text = document.querySelector('.rotate-text');
             text.innerHTML = text.innerText.split('').map(
                 (char, i) =>
                 `<span style= "transform:rotate(${i * 8.3}deg)"> ${char}</span>`
