@@ -12,11 +12,11 @@
 body {
     background: linear-gradient(to right, #4F4F51, #2C2B30);
     margin: 0;
-    padding: 10px;
+    padding: 0;
     display: grid;
-    place-items: center;
+    align-items: center;
     min-height: 100vh;
-    width: 100vh;
+    width: 100%;
 }
 .sticky-header {
     height: 100%;
@@ -24,7 +24,7 @@ body {
     padding: 0 2%;
     position: sticky;
     z-index: 3;
-    margin-top: 1.5em;
+    margin-top: 2em;
     top: 0;
 }
 
@@ -548,7 +548,7 @@ nav {
     grid-auto-columns: 1fr;
     display: grid;
     width: 100%;
-    margin-left: 12.5%
+    margin-left: 5%
 }
 
 h4 {
@@ -1118,7 +1118,7 @@ section {
   .main-nav {
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 24%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
@@ -1258,7 +1258,7 @@ section {
 .left-text-box-container {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     height: 100vh;
     z-index: 1;
@@ -1271,6 +1271,7 @@ section {
     font-size: 4em;
     color:#D6D6D6;
     margin-bottom: -10%;
+    margin-right: 17%;
 }
 
 .left-text-box-summary {
@@ -1280,6 +1281,7 @@ section {
     overflow: hidden; /* Hide content that overflows the box */
     white-space: normal;
     width: 50%;
+    margin-top: 2%;
 }
 
 .fade-in {
@@ -1313,6 +1315,7 @@ section {
     height: 80vh;
     z-index: 1;
     width: 50%;
+    padding: 0 2%;
 }
 
 .about-me-container {
@@ -1355,7 +1358,7 @@ section {
     justify-content: center;
     height: 100vh;
     z-index: 1;
-    width:80%;
+    width: 100%;
 }
 
 .left-connect-text-box-container {
@@ -1392,7 +1395,7 @@ section {
     height: 80vh;
     z-index: 1;
     width: 80%;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -1425,7 +1428,7 @@ section {
 .contact-me-container {
     height: 50%;
     color: #D6D6D6;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
