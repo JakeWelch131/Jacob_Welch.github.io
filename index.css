@@ -16,6 +16,7 @@ body {
     display: grid;
     place-items: center;
     min-height: 100vh;
+    width: 100vh;
 }
 .sticky-header {
     height: 100%;
@@ -1027,7 +1028,7 @@ section {
     content: '';
   width: 5px;
   height: 100%;
-  background-color:#F58F7C; /* Adjust the color as needed */
+  background-color:#F58F7C; 
   position: absolute;
   top: 0;
   left: 0;
@@ -1039,7 +1040,7 @@ section {
     content: '';
   width: 5px;
   height: 100%;
-  background-color:#F58F7C; /* Adjust the color as needed */
+  background-color:#F58F7C; 
   position: absolute;
   top: 0;
   right: 0;
