@@ -8,6 +8,8 @@
 }
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     background: linear-gradient(to right, #4F4F51, #2C2B30);
@@ -1069,6 +1071,7 @@ section {
     margin-left: 60%;
     margin-right: 10%;
     position: relative;
+    margin-bottom: 10%;
 }
 
 .right-summary {
