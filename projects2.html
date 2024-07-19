@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jacob Welch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="projects.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+        <script defer src="C:\Users\Jake\OneDrive\Desktop\Projects\portfolioSite\app.js"></script>
+        <link rel="stylesheet" href="projects2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Tilt+Prism&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="sticky-header">
+            <nav>
+                <a href="index.html" class="main-page-button">Jacob <br> &nbsp;&nbsp;Welch</a>
+                <a href="#" class="menu-icon" onclick="ToggleMenu()">
+                    <div class="menu-bar menu-bar1"></div>
+                    <div class="menu-bar menu-bar2"></div>
+                    <div class="menu-bar menu-bar3"></div>
+                </a>
+                <div class="menu">
+                    <div class="menu-con"><a href="index.html">HOME</a></div>
+                    <div class="menu-con"><a href="projects2.html">PROJECTS</a></div>  
+                    <div class="menu-con"><a href="about.html">ABOUT</a></div> 
+                    <div class="menu-con"><a href="contact.html">CONTACT</a></div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="top-left-diagonal-border"></div>
+        <div class="bottom-right-diagonal-border"></div>
+        <div class="title-container">
+            <div class="body-title">
+                <p class="title-text hiddenTitle">COMPUTER SCIENCE STUDENT</p>
+                <p class="title-text2 font-change1 hiddenTitle">PERSONAL <br> PROJECTS</p>
+                <p class="title-text3 font-change2 hiddenTitle"></p>
+                <p class="title-text4 font-change1 hiddenTitle"></p>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="container">
+                <input type="radio" name="slide1" id="c1" class="input">
+                <label for="c1" class="card" onclick="showDescription('desc1')">
+                    <div class="row">
+                        <img width="1439" alt="Screenshot 2024-07-19 at 1 49 58 PM" src="https://github.com/user-attachments/assets/b4e6f2ad-5d0f-422e-82f3-41ae75fb1011">
+                    </div>
+                </label>
+        
+                <input type="radio" name="slide1" id="c2" class="input">
+                <label for="c2" class="card" onclick="showDescription('desc2')">
+                    <div class="row">                       
+                        <img width="1440" alt="Screenshot 2024-07-19 at 2 23 58 PM" src="https://github.com/user-attachments/assets/395b6e1b-aa70-4f2b-93ed-cb8b6bb26ce8">
+                    </div>
+                </label>
+        
+                <input type="radio" name="slide1" id="c3" class="input">
+                <label for="c3" class="card" onclick="showDescription('desc3')">
+                    <div class="row">
+                        <img width="1440" alt="Screenshot 2024-07-19 at 1 50 13 PM" src="https://github.com/user-attachments/assets/27052945-2176-4dba-a423-bedc4e8a52ee">
+                    </div>
+                </label>
+        
+                <input type="radio" name="slide1" id="c4" class="input">
+                <label for="c4" class="card" onclick="showDescription('desc4')">
+                    <div class="row">
+                        <img width="1440" alt="Screenshot 2024-07-19 at 2 00 55 PM" src="https://github.com/user-attachments/assets/e417f4d7-bf3d-4924-b3af-7d4c959379d2">
+                    </div>
+                </label>
+            </div>
+        
+            <div class="description-container">
+                <div id="desc1" class="description">
+                    <a href="https://corneliuspavlic.github.io/PainPointPercision/#/">
+                        <h4 class="highlight">Pain Point Precision</h4>
+                    </a>
+                    <ul>
+                        <li>Built a web application with Vue.js that provides users a free alternative <br> 
+                            to receiving custom physical therapy recovery programs and tutorials. </li>
+                        <li>Utilized an open-sourced 3-D musculoskeletal model and ChatGPT’s API <br>
+                            to create the recovery programs. <br>
+                            Used Youtube’s API to compile video tutorials for the exercises</li>
+                        <li>A group project created during Kent Hack Enough 2024 hackathon</li>
+                    </ul>
+                </div>
+                <div id="desc2" class="description">
+                    <a href="https://jacobsjammmingproject.surge.sh/">
+                        <h4 class="highlight">Jammming</h4>
+                    </a>
+                    <ul>
+                        <li>Built a React web application that allows users to log into their Spotify,<br> search the Spotify Library, create a custom playlist, <br>and then save it to their Spotify account 
+                        </li>
+                        <li>Used my knowledge in API requests and responses, React, and web app <br>deployment to create this project
+                        </li>
+                        <li>Used Git to version control throughout development
+                        </li>
+                    </ul>
+                </div>
+                <div id="desc3" class="description">
+                    <a href="https://github.com/JakeWelch131/Jacob_Welch.github.io">
+                        <h4 class="highlight">Portfolio Site </h4>
+                    </a>
+                    <ul>
+                        <li>Created and deployed a personal portfolio website from scratch in order <br>
+                            to display projects and show my skills using HTML/CSS and Javascript                  
+                        </li>
+                        <li>Designed the wireframes before implementation using Balsamiq Wireframes 
+                        </li>
+                        <li>Used GitHub to deploy the site
+                        </li>
+                    </ul>
+                </div>
+                <div id="desc4" class="description">
+                    <a href="https://github.com/JakeWelch131/Codecademy-FullStack-Cert">
+                        <h4 class="highlight">Codecademy Certification Projects</h4>
+                    </a>
+                    <ul>
+                        <li>Every project assigned throughout the completion of the Codecademy Full-Stack Engineering curriculum                 
+                        </li>
+                        <li>Contains 30+ projects from modules such as Foundation of Web Development Foundations, <br>
+                            Building Interactive Websites, Front-End Development, and Back-End Development
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="title-container extra-top">
+            <div class="body-title">
+                <p class="title-text2 font-change1 hiddenTitle italic">ACADEMIC <br> PROJECTS</p>
+                <p class="title-text3 font-change2 hiddenTitle">CREATED IN</p>
+                <p class="title-text4 font-change1 hiddenTitle">C++</p>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="container">
+                <input type="radio" name="slide2" id="c5" class="input">
+                <label for="c5" class="card" onclick="showDescription('desc5')">
+                    <div class="row">
+                        <img width="1440" alt="Screenshot 2024-07-19 at 3 24 15 PM" src="https://github.com/user-attachments/assets/83dd5d27-f12b-42e5-be01-850bba3e8113">
+                    </div>
+                </label>
+        
+                <input type="radio" name="slide2" id="c6" class="input">
+                <label for="c6" class="card" onclick="showDescription('desc6')">
+                    <div class="row">                                              
+                        <img width="1440" alt="Screenshot 2024-07-19 at 3 24 35 PM" src="https://github.com/user-attachments/assets/52ea654f-64d3-4dfe-98af-1c98b21d8066">
+                    </div>
+                </label>
+            </div>
+        
+            <div class="description-container">
+                <div id="desc5" class="description">
+                    <a href="https://github.com/JakeWelch131/CS-2-Projects">
+                        <h4 class="highlight">Computer Science II: Data Structures</h4>
+                    </a>
+                    <ul>
+                        <li> All of my projects assigned for Kent State's CSII class
+                        </li>
+                        <li> Completed using C++ to complete projects about implementing various data structures
+                        </li>
+                        <li> Also learned about unit testing and how to implement thorough test suites</li>
+                    </ul>
+                </div>
+                <div id="desc6" class="description">
+                    <a href="https://github.com/JakeWelch131/CS3-Projects">
+                        <h4 class="highlight">Computer Science III: Programming Patterns</h4>
+                    </a>
+                    <ul>
+                        <li> All of my Labs for Kent State's CSIII class
+                        </li>
+                        <li> Completed using C++ to complete assignments on popular programming paradigms
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script defer> 
+            var open = false;
+    
+            function ToggleMenu() {
+                var menuCons = document.querySelectorAll('.menu-con');
+                var menu = document.querySelector('.menu');
+    
+                if (open == false) {
+                    menu.style.display = 'flex';
+                    setTimeout(function () {
+                    menu.style.opacity = 1;
+                    }, 10);
+                    open = true;
+                } else {
+                    menu.style.opacity = 0;
+                    setTimeout(function () {
+                    menu.style.display = 'none';
+                    }, 500);
+                    open = false;
+                }
+    
+                menuCons.forEach(function (menuCon, index) {
+                    var pos = open ? 0 : -1 * window.innerHeight - index * 100;
+                    menuCon.style.top = pos + 'px';
+                });
+    }
+        </script>
+
+        <script>
+            function showDescription(descId) {
+                // Hide all descriptions
+                var descriptions = document.querySelectorAll('.description');
+                descriptions.forEach(function(description) {
+                    description.style.display = 'none';
+                });
+
+                // Show the selected description
+                var selectedDescription = document.getElementById(descId);
+                if (selectedDescription) {
+                    selectedDescription.style.display = 'block';
+                }
+
+                // Ensure the description container is visible
+                var descriptionContainers = document.querySelectorAll('.description-container');
+                descriptionContainers.forEach(function(container) {
+                    container.style.display = 'block';
+            });
+}
+
+// Show the default description on page load
+window.onload = function() {
+    showDescription('desc1');
+};
+
+        </script>
+            
+            <script>
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        console.log(entry)
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('show');
+                        } else {
+                            entry.target.classList.remove('show');
+                        }
+                    })
+                })
+
+                const hiddenElements = document.querySelectorAll('.hidden');
+                hiddenElements.forEach((el) => observer.observe(el));
+
+                const titleObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        console.log(entry)
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('showTitle');
+                        } else {
+                            entry.target.classList.remove('showTitle');
+                        }
+                    })
+                })
+
+                const hiddenTitleElements = document.querySelectorAll('.hiddenTitle');
+                hiddenTitleElements.forEach((el) => titleObserver.observe(el));
+            </script>
+
+    </body>

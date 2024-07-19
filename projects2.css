@@ -1,0 +1,340 @@
+.sticky-header {
+    height: 100%;
+    width: 100%;
+    padding: 0 2%;
+    position: sticky;
+    z-index: 3;
+    margin-top: 2em;
+    top: 0;
+}
+
+.main-page-button {
+    background-color: transparent;
+    border-color: transparent;
+    /*color: transparent;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    cursor: pointer;
+    color: #D6D6D6;
+    width: 140px;
+    margin: 0 0 0 1em;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 15px 15px;
+    transform:scale(0.8);
+    padding: 0;
+    cursor: pointer;
+    z-index:20
+}
+
+.menu-bar {
+    width: 50px;
+    height: 5px;
+    background: rgb(190,190,190);
+    position: absolute;
+    transition: all 0.3s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-bar1 {margin-top: 9px}
+
+.menu-bar2 {margin-top: 23px}
+
+.menu-bar3 {margin-top: 37px}
+
+.menu-icon.hover .menu-bar1 {
+    transform: rotate(45deg) scaleX(0.7);
+    -webkit-transform: rotate(45deg) scaleX(0.7);
+    margin-top: 22px;
+}
+.menu-icon.hover .menu-bar2 {
+    opacity: 0
+}
+.menu-icon.hover .menu-bar3 {
+    transform: rotate(-45deg) scaleX(0.7);
+    -webkit-transform: rotate(-45deg) scaleX(0.7);
+    margin-top: 22px;
+}
+
+.menu-icon:hover div {
+    width: 30px;
+    background: linear-gradient(to right, #F2C4CE, #F58F7C);
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed; /* Set the position to fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left */
+    display: none; /* Initially hide the menu */
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 0.75s ease-in-out;
+    flex-direction: column;
+    background: linear-gradient(to right, #4F4F51, #2C2B30);
+}
+.menu-con {
+    -webkit-flex-grow: 1;
+    flex-basis: 0;
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    -webkit-justify-content:space-around;
+    position:relative;
+    top:-100%;
+    transition:all 0.5s ease-in-out;
+    font-size: 3em;
+    font-style: italic;
+}
+.menu-con p:before {
+    content: ""; 
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width:100%;
+    height: 100%;
+    opacity: 1;
+    background: rgba(0,0,0,0);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*.menu-con:hover p:before {
+    background: rgba(0,0,0,0.2);
+    
+}*/
+.menu-con p {
+    height:20px;
+    align-self: center;
+    -webkit-align-self:center;
+    color:#D6D6D6;
+    font-size:25px;
+    z-index:2;
+    cursor:pointer
+}
+
+.menu-con a {
+    height:20px;
+    align-self: center;
+    -webkit-align-self:center;
+    color:#D6D6D6;
+    font-size:25px;
+    z-index:2;
+    cursor:pointer;
+    text-align: center;
+}
+
+.menu-con p:hover {
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    transition: text-shadow 0.3s ease;
+    font-size: .75em;
+    transition: font-size 0.3s ease;
+}
+
+.menu-con a:hover {
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    transition: text-shadow 0.3s ease;
+    font-size: .75em;
+    transition: font-size 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {.menu-con {min-width:50%}}
+@media screen and (max-width: 350px) {.menu-con {min-width:100%}}
+
+
+
+.main-page-button {
+    background-color: transparent;
+    border-color: transparent;
+    /*color: transparent;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    cursor: pointer;
+    color: #D6D6D6;
+    width: 140px;
+    margin: 0 0 0 1em;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+
+
+.main-page-button:hover {
+    color: #F58F7C;
+    transition: color 0.3s ease;
+}
+
+.title-text {
+    font-family: migra, sans-serif;
+    color: #D6D6D6;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 50px;
+}
+
+.title-text2,
+.title-text4 {
+    font-family: dream, sans-serif;
+    color: #D6D6D6;
+    text-align: center;
+    font-size: 8em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title-text3 {
+    font-family: migra, sans-serif;
+    color: #D6D6D6;
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    margin-top: 0px;
+    line-height: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.font-change1 {
+    font-size: 10em;
+}
+
+.font-change2 {
+    font-size: 4em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eeeeea;
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack cards and description div */
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; /* Center cards horizontally */
+    align-items: center; /* Center cards vertically */
+    width: 100%; /* Full width */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    padding: 0 20px; /* Add padding to avoid clipping */
+}
+
+.card {
+    width: 150px; /* Default width of the card */
+    height: 400px; /* Default height of the card */
+    border-radius: 2rem;
+    background-size: cover; /* Ensure the background image covers the entire card */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.6s cubic-bezier(.28, -0.03, 0, .99), height 0.6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin: 0 10px;
+}
+
+.card > .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    height: 100%; /* Ensure the image takes up the full height of the card */
+    object-fit: cover; /* Scale the image to cover the card */
+}
+
+
+
+
+.description-container {
+    display: none;
+    color: white;
+
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: .75rem;
+    width: 600px;
+}
+
+.description {
+    display: none;
+}
+
+.highlight:hover {
+    color: #F58F7C;
+    transition: color 0.3s ease;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + .card {
+    width: 600px; /* Expanded width on selection */
+    height: 400px; /* Expanded height on selection */
+}
+
+input:checked + .card + .description-container {
+    display: block;
+}
+
+li {
+    margin-bottom: 10px; /* Add space between list items */
+    margin-left: 5px;
+}
+
+input:checked + .card + .description-container,
+input:checked + .card + .description-container + .description {
+    display: block;
+}
+/*#myVideo {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+   
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}*/
